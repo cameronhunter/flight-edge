@@ -1,0 +1,20 @@
+{
+  "name": "flight-edge",
+  "version": "0.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-bump": "latest",
+    "karma": "~0.10.0",
+    "karma-chrome-launcher": "~0.1.0",
+    "karma-firefox-launcher": "~0.1.0",
+    "karma-ie-launcher": "~0.1.1",
+    "karma-jasmine": "~0.1.0",
+    "karma-phantomjs-launcher": "~0.1.0",
+    "karma-requirejs": "~0.1.0",
+    "karma-safari-launcher": "~0.1.1",
+    "matchdep": "latest"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+  }
+}
