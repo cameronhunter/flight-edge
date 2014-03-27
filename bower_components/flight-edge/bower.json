@@ -1,6 +1,6 @@
 {
   "name": "flight-edge",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "main": "lib/edge.js",
   "dependencies": {
     "flight": "~1.1.0"
@@ -10,13 +10,15 @@
     "jasmine-jquery": "*"
   },
   "ignore": [
-    ".gitignore",
     ".gitattributes",
+    ".gitignore",
     ".travis.yml",
-    "CONTRIBUTING.md",
     "CHANGELOG.md",
-    "test",
+    "CONTRIBUTING.md",
+    "Gruntfile.js",
+    "karma.conf.js",
+    "node_modules",
     "package.json",
-    "karma.conf.js"
+    "test"
   ]
 }
