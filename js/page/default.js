@@ -3,14 +3,18 @@ define(function (require) {
   'use strict';
 
   var Longcat = require('component/longcat');
+  var LongcatStats = require('component/longcatStats');
   var Edge = require('bower_components/flight-edge/lib/edge');
-  var Reporter = require('component/pageSizeReporter');
 
   return initialize;
 
   function initialize() {
 
-    Reporter.attachTo(".Report-number");
+    $(document).on("longcat-is-longer", function(e, data) {
+      console.log(e, data);
+    });
+
+    LongcatStats.attachTo(".LongcatStats");
 
     Longcat.attachTo(".Longcat");
 
