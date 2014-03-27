@@ -1,0 +1,35 @@
+body {
+  height: 2000px;
+  margin: 0;
+  padding: 0;
+}
+
+.Longcat {
+  margin: 20px 0 0 50px;
+  height: 100%;
+  width: 300px;
+}
+
+.Longcat-head {
+  background: url(../img/longcat-head.png) top left no-repeat;
+  height: 683px;
+}
+
+.Longcat-body {
+  height: 100%;
+  background: #000 url(../img/longcat-body.png) top left repeat-y;
+}
+
+.Longcat-segment {
+  position: relative;
+  height: 513px;
+  background: #000 url(../img/longcat-body.png) top left repeat-y;
+}
+
+.Report {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  font-size: 42px;
+  margin-top: 120px;
+}
