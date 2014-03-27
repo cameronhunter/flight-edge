@@ -4,21 +4,21 @@ define(function (require) {
 
   var defineComponent = require("flight/lib/component");
 
-  return defineComponent(longcat);
+  return defineComponent(Longcat);
 
-  function longcat() {
+  function Longcat() {
 
     this.embiggen = function(e) {
       $("<div>", {"class": "Longcat-segment"}).appendTo(this.$node);
-      this.broadcastHeight();
+      this.broadcastLongcatLength();
     };
 
-    this.broadcastHeight = function() {
+    this.broadcastLongcatLength = function() {
       this.trigger("longcat-is-longer", {"longcat-length": $(document).height()});
     };
 
     this.after("initialize", function() {
-      this.broadcastHeight();
+      this.broadcastLongcatLength();
       this.on(document, "edge-bottom", this.embiggen);
     });
   }

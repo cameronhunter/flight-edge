@@ -2,17 +2,14 @@ define(function (require) {
 
   'use strict';
 
-  var Longcat = require('component/longcat');
-  var LongcatStats = require('component/longcatStats');
+  var Longcat = require('component/Longcat');
+  var LongcatStats = require('component/LongcatStats');
+  var PageNavigation = require('component/PageNavigation');
   var Edge = require('bower_components/flight-edge/lib/edge');
 
   return initialize;
 
   function initialize() {
-
-    $(document).on("longcat-is-longer", function(e, data) {
-      console.log(e, data);
-    });
 
     LongcatStats.attachTo(".LongcatStats");
 
@@ -23,6 +20,7 @@ define(function (require) {
       bottom: 300
     });
 
+    PageNavigation.attachTo(".PageNavigation");
   }
 
 });

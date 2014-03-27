@@ -1,9 +1,10 @@
-body {
-  height: 2000px;
-  margin: 0;
-  padding: 0;
-}
-
+/**
+ * Longcat SUIT component
+ *
+ * The longcat itself. It has a head, body, and segments. The body is used to
+ * fill the original viewport (plus a bit). Segments are added to lengthen the
+ * longcat.
+ */
 .Longcat {
   margin: 20px 0 0 50px;
   height: 100%;
@@ -16,20 +17,38 @@ body {
 }
 
 .Longcat-body {
-  height: 100%;
+  height: 110vh;
   background: #000 url(../img/longcat-body.png) top left repeat-y;
 }
 
 .Longcat-segment {
-  position: relative;
   height: 513px;
   background: #000 url(../img/longcat-body.png) top left repeat-y;
 }
 
+/**
+ * LongcatStats SUIT component
+ *
+ * Used to display the impressive length of the longcat.
+ */
 .LongcatStats {
+  position: fixed;
+  font-size: 42px;
+  margin-top: 120px;
+  margin-left: 400px;
+}
+
+/**
+ * PageNavigation SUIT component
+ *
+ * Contains a link to the top of the page, shown after leaving the top of the
+ * page when scrolling. It is then hidden again when entering the top edge.
+ */
+.PageNavigation {
   position: fixed;
   width: 100%;
   text-align: center;
-  font-size: 42px;
-  margin-top: 120px;
+  font-size: 36px;
+  bottom: 50px;
+  display: none;
 }
