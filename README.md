@@ -33,7 +33,7 @@ define(['flight-edge'], function(Edge) {
   });
 
 });
-
+```
 
 ## Development
 
