@@ -4,13 +4,13 @@ define(function (require) {
 
   var Longcat = require('component/longcat');
   var Edge = require('bower_components/flight-edge/lib/edge');
-  var Reporter = require('component/pageSizeReporter');
+  var LengthDisplay = require('component/longcatLengthDisplay');
 
   return initialize;
 
   function initialize() {
 
-    Reporter.attachTo(".Report-number");
+    LengthDisplay.attachTo(".Report-number");
 
     Longcat.attachTo(".Longcat");
 
