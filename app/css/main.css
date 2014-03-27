@@ -26,7 +26,7 @@ body {
   background: #000 url(../img/longcat-body.png) top left repeat-y;
 }
 
-.Report {
+.LongcatStats {
   position: fixed;
   width: 100%;
   text-align: center;

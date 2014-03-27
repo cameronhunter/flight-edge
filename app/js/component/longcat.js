@@ -14,7 +14,7 @@ define(function (require) {
     };
 
     this.broadcastHeight = function() {
-      this.trigger("longcat-is-longer", {"longcat-length": this.$node.height()});
+      this.trigger("longcat-is-longer", {"longcat-length": $(document).height()});
     };
 
     this.after("initialize", function() {
