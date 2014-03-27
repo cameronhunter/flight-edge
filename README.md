@@ -1,8 +1,9 @@
 # flight-edge
 
-[![Build Status](https://secure.travis-ci.org/<username>/flight-edge.png)](http://travis-ci.org/<username>/flight-edge)
+A [Flight](https://github.com/flightjs/flight) component that triggers an event
+when entering or leaving a screen edge.
 
-A [Flight](https://github.com/flightjs/flight) component for…
+See it action, [try the longcat demo](http://cameronhunter.github.io/flight-edge/).
 
 ## Installation
 
@@ -12,7 +13,27 @@ bower install --save flight-edge
 
 ## Example
 
-…
+```javascript
+define(['flight-edge'], function(Edge) {
+
+  // Listen for scrolling into a zone
+  $(document).on("edge-top edge-bottom", function(e, data) {
+    console.log(e, data);
+  });
+
+  // Listen for scrolling out of a zone
+  $(document).on("leaving-edge-top leaving-edge-bottom", function(e, data) {
+    console.log(e, data);
+  });
+
+  // Setup the zones
+  Edge.attachTo(document, {
+    top: 300,
+    bottom: 300
+  });
+
+});
+
 
 ## Development
 
