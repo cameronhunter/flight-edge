@@ -1,3 +1,5 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 # flight-edge
 
 A [Flight](https://github.com/flightjs/flight) component that triggers an event
